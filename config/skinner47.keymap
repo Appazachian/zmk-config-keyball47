@@ -41,7 +41,7 @@
 
         escc: esc_mod {
             compatible = "zmk,behavior-hold-tap";
-	    label = "ESC_LCTRL"
+	    label = "ESC_LCTRL";
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
@@ -51,7 +51,7 @@
 
 	spcg: space_mod {
             compatible = "zmk,behavior-hold-tap";
-	    label = "SPACE_LGUI"
+	    label = "SPACE_LGUI";
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
