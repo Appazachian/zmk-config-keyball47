@@ -46,6 +46,13 @@
     };
 
     behaviours {
+        guinum: gui_num {
+            label = "GUI_NUM";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI &mo>, <&kp>;
+        };
+
         // Bluetooth Macros
         bt1: bt1 {
             compatible = "zmk,behavior-macro";
