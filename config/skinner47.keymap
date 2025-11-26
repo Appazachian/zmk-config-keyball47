@@ -21,6 +21,7 @@
     combos {
         compatible = "zmk,combos";
         cmbgui: cgui {
+            #binding-cells = <2>
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&mo LGUI>;
