@@ -62,7 +62,7 @@
         fwdslh: fwd_slash_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "FWD_SLSH_MOD";
-            #bidnding-cells = <2>;
+            #bidnding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
             quick-tap-ms = <0>;
