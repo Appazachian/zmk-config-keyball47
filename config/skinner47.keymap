@@ -7,11 +7,11 @@
 // reduce the default hold time slightly
 &mt {
     // tapping-term-ms = <200>; // This is the value already set by default
-    tapping-term-ms = <185>;
+    tapping-term-ms = <125>;
 };
 &lt {
     // tapping-term-ms = <200>; // This is the value already set by default
-    tapping-term-ms = <185>;
+    tapping-term-ms = <125>;
 };
 
 
