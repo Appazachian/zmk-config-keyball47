@@ -30,31 +30,31 @@
         escc: esc_mod {
             compatible = "zmk,behavior-hold-tap";
 	    label = "ESC_LCTRL";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
 	    quick-tap-ms = <0>;
-            bindings = <&kp ESC>, <&kp LCTRL>;
+            bindings = <&kp ESC &kp LCTRL>;
         };
 
 	spcg: space_mod {
             compatible = "zmk,behavior-hold-tap";
 	    label = "SPACE_LGUI";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
 	    quick-tap-ms = <0>;
-            bindings = <&kp SPACE>, <&kp LGUI>;
+            bindings = <&kp SPACE &kp LGUI>;
         };
 
         fwdslh: fwd_slash_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "FWD_SLSH_MOD";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
             quick-tap-ms = <0>;
-            bindings = <&kp FSLH>, <&mo 3>;
+            bindings = <&kp FSLH &mo 3>;
 	};
 
         // Bluetooth Macros
