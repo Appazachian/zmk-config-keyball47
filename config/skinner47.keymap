@@ -37,7 +37,12 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LGUI>, <&macro_press &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LCTRL>, <&macro_release &kp LGUI>;
         };
-
+        guinum: gui_num {
+            label = "GUI_NUM";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_press &mo 1>;
+        };
     };
 
     behaviours {
@@ -79,28 +84,6 @@
             #binding-cells = <0>;
             bindings = <&bt BT_CLR>;
         };
-
-	// Behavior Macros
-        guinum: gui_num {
-            compatible = "zmk,behavior-macro";
-            label = "GUI_NUM";
-            #binding-cells = <0>;
-            bindings = <&mo 1 &kp LGUI>;
-        };
-
-        hypr: hyper_macro {
-            compatible = "zmk,behavior-macro";
-            label = "HYPER";
-            #binding-cells = <0>;
-            bindings = <&kp LCTL &kp LALT &kp LSHFT &kp LGUI>;
-        };
-        meh: meh_macro {
-            compatible = "zmk,behavior-macro";
-            label = "MEH";
-            #binding-cells = <0>;
-            bindings = <&kp LCTL &kp LALT &kp LSHFT>;
-        };
-
     };
 
     keymap {
