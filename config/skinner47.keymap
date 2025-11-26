@@ -182,7 +182,7 @@
         };
 
         function_layer {
-	    label = "Fn"
+	    label = "Fn";
             bindings = <
 // -------------------------------------------------------------------------------------------------------------------------
 // |       | F1    | F2    | F3    | F4    | F5    |+++++++++++++++++++++++| F6    | F7    | F8    | F9    | F10   |       |
@@ -206,7 +206,7 @@
         };
 
         mouse_layer {
-	    label = "Mouse"
+	    label = "Mouse";
             bindings = <
 // -------------------------------------------------------------------------------------------------------------------------
 // |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |       |       |
@@ -231,7 +231,7 @@
 
 // These were part of the default, no sure if they are needed, but I'm leaving them just in case
         scroll_layer {
-	    label = "Scroll"
+	    label = "Scroll";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
