@@ -107,9 +107,9 @@
 // |-------|-------|-------|-------|-------|-------| ------|+++++++|------ |-------|-------|-------|-------|-------|-------|
 
 &kp TAB        &kp Q    &kp W  &kp E     &kp R     &kp T                                &kp Y  &kp U    &kp I      &kp O    &kp P       &kp BACKSLASH
-&tm LCTRL ESC  &kp A    &kp S  &kp D     &kp F     &kp G                                &kp H  &kp J    &kp K      &kp L    &kp SEMI    &kp SQT
-&kp LSHFT      &kp Z    &kp X  &kp C     &kp V     &kp B                                &kp N  &kp M    &kp COMMA  &kp DOT  &tm 3 FSLH  &kp RSHFT
-&none          &memoji  &mo 5  &kp LALT  &kp LGUI  &kp SPACE  &mo 1        &tl 4 ENTER  &tl 3 BACKSPACE /*  TrackBall  */   &meh        &hypr
+&tm ESC LCTRL  &kp A    &kp S  &kp D     &kp F     &kp G                                &kp H  &kp J    &kp K      &kp L    &kp SEMI    &kp SQT
+&kp LSHFT      &kp Z    &kp X  &kp C     &kp V     &kp B                                &kp N  &kp M    &kp COMMA  &kp DOT  &tm FSLH 3  &kp RSHFT
+&none          &memoji  &mo 5  &kp LALT  &kp LGUI  &kp SPACE  &mo 1        &tl ENTER 4  &tl BACKSPACE 3 /*  TrackBall  */   &meh        &hypr
             >;
         };
 
