@@ -46,7 +46,7 @@
             tapping-term-ms = <185>;
             quick-tap-ms = <125>;
             global-quick-tap;
-            bindings = <&kp>, <&kp ESC>;
+            bindings = <&kp &kp ESC>;
         };
         spcl: space_layer {
             compatible = "zmk,behavior-hold-tap";
@@ -56,7 +56,7 @@
             tapping-term-ms = <185>;
             quick-tap-ms = <125>;
             global-quick-tap;
-            bindings = <&mo>, <&kp SPACE>;
+            bindings = <&mo &kp SPACE>;
         };
         entl: enter_layer {
             compatible = "zmk,behavior-hold-tap";
@@ -66,7 +66,7 @@
             tapping-term-ms = <185>;
             quick-tap-ms = <125>;
             global-quick-tap;
-            bindings = <&mo>, <&kp ENTER>;
+            bindings = <&mo &kp ENTER>;
         };
         bkspcl: backspace_layer {
             compatible = "zmk,behavior-hold-tap";
@@ -76,7 +76,7 @@
             tapping-term-ms = <185>;
             quick-tap-ms = <125>;
             global-quick-tap;
-            bindings = <&mo>, <&kp BACKSPACE>;
+            bindings = <&mo &kp BACKSPACE>;
         };
 
 
