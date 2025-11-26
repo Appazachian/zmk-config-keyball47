@@ -13,7 +13,7 @@
 &lt {
     // tapping-term-ms = <200>; // This is the value already set by default
     tapping-term-ms = <150>;
-    quick-tap-ms= <0>
+    quick-tap-ms= <0>;
 };
 
 
