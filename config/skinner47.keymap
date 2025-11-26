@@ -8,10 +8,12 @@
 &mt {
     // tapping-term-ms = <200>; // This is the value already set by default
     tapping-term-ms = <150>;
+    quick-tap-ms = <0>;
 };
 &lt {
     // tapping-term-ms = <200>; // This is the value already set by default
     tapping-term-ms = <150>;
+    quick-tap-ms= <0>
 };
 
 
@@ -128,9 +130,9 @@
 // |       |       |       |       |       | Num   |       |+++++++| Fn    |       |                       |       |       |
 // |-------|-------|-------|-------|-------|-------| ------|+++++++|------ |-------|-------|-------|-------|-------|-------|
 
-    &trans    &kp N1  &kp N2  &kp N3  &kp N4   &kp N5                       &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-    &trans    &none   &none   &none   &none    &none                        &none   &none   &none   &none   &none   &none
-    &trans    &none   &none   &none   &none    &none                        &none   &none   &none   &none   &none   &trans
+    &trans    &kp N1  &kp N2  &kp N3  &kp N4   &kp N5                       &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &none
+    &trans    &none   &none   &none   &none    &none                        &none   &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &none
+    &trans    &none   &none   &none   &none    &none                        &none   &none      &none      &none     &none     &trans
     &none     &memoji &none   &none   &trans   &trans  &trans       &trans  &trans /*    TrackBall      */  &trans  &trans
             >;
         };
