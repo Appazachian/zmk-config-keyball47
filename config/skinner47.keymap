@@ -29,69 +29,6 @@
     };
 
     behaviours {
-/* These aren't working for some reason... pretty sure these exact behaviours worked on my lily58.
-	tm: tap_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_MOD";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <225>;
-            quick-tap-ms = <0>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        tl: tap_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_LAYER";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <225>;
-            quick-tap-ms = <0>;
-            bindings = <&kp>, <&mo>;
-        };
-*/
-        escm: esc_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ESC_MOD";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <185>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&kp &kp ESC>;
-        };
-        spcl: space_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SPACE_LAYER";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <185>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&mo &kp SPACE>;
-        };
-        entl: enter_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ENTER_LAYER";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <185>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&mo &kp ENTER>;
-        };
-        bkspcl: backspace_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BACKSPACE_LAYER";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <185>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&mo &kp BACKSPACE>;
-        };
-
-
         // Bluetooth Macros
         bt1: bt1 {
             compatible = "zmk,behavior-macro";
