@@ -29,16 +29,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        tl: tap_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_LAYER";
-            #bidnding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <225>;
-            quick-tap-ms = <0>;
-            bindings = <&kp>, <&mo>;
-	};
-
         escc: esc_mod {
             compatible = "zmk,behavior-hold-tap";
 	    label = "ESC_LCTRL";
@@ -62,7 +52,7 @@
         fwdslh: fwd_slash_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "FWD_SLSH_MOD";
-            #bidnding-cells = <0>;
+            #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
             quick-tap-ms = <0>;
