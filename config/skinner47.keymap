@@ -46,13 +46,6 @@
     };
 
     behaviours {
-        guinum: gui_num {
-            label = "GUI_NUM";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            bindings = <&kp LGUI &mo>, <&kp>;
-        };
-
         // Bluetooth Macros
         bt1: bt1 {
             compatible = "zmk,behavior-macro";
@@ -116,7 +109,7 @@
 &kp TAB        &kp Q    &kp W  &kp E     &kp R     &kp T                                 &kp Y  &kp U    &kp I      &kp O    &kp P              &kp BACKSLASH
 &mt LCTRL ESC  &kp A    &kp S  &kp D     &kp F     &kp G                                 &kp H  &kp J    &kp K      &kp L    &kp SEMI           &kp SQT
 &kp LSHFT      &kp Z    &kp X  &kp C     &kp V     &kp B                                 &kp N  &lt 5 M  &kp COMMA  &kp DOT  &lt 4 FSLH         &kp RSHFT
-&none          &memoji  &none  &kp LALT  &kp LGUI  &lt 1 SPACE  &mo LG(1)         &kp RET  &lt 3 BACKSPACE  /*  TrackBall  */  &kp LC(LA(LSHFT))  &kp LC(LA(LS(LGUI)))
+&none          &memoji  &none  &kp LALT  &kp LGUI  &lt 1 SPACE  &guinum         &kp RET  &lt 3 BACKSPACE  /*  TrackBall  */  &kp LC(LA(LSHFT))  &kp LC(LA(LS(LGUI)))
             >;
         };
 
