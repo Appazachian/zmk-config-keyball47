@@ -7,13 +7,13 @@
 // reduce the default hold time slightly
 &mt {
     // tapping-term-ms = <200>; // This is the value already set by default
-    flavor = "tap-preffered";
+    flavor = "tap-preferred";
     tapping-term-ms = <185>;
     quick-tap-ms = <0>;
 };
 &lt {
     // tapping-term-ms = <200>; // This is the value already set by default
-    flavor = "tap-preffered";
+    flavor = "tap-preferred";
     tapping-term-ms = <185>;
     quick-tap-ms= <0>;
 };
