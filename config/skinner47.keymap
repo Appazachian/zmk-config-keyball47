@@ -8,13 +8,13 @@
 &mt {
     // tapping-term-ms = <200>; // This is the value already set by default
     flavor = "tap-preferred";
-    tapping-term-ms = <175>;
+    tapping-term-ms = <185>;
     quick-tap-ms = <0>;
 };
 &lt {
     // tapping-term-ms = <200>; // This is the value already set by default
     flavor = "tap-preferred";
-    tapping-term-ms = <175>;
+    tapping-term-ms = <185>;
     quick-tap-ms= <0>;
 };
 
@@ -88,44 +88,44 @@
 // | TAB   |   Q   |   W   |   E   |   R   |   T   |+++++++++++++++++++++++|   Y   |   U   |   I   |   O   |   P   |   \   |
 // |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |       |   |   |
 // |-------|-------|-------|-------|-------|-------|+++++++++++++++++++++++|-------|-------|-------|-------|-------|-------|
-// | ESC   |   A   |   S   |   D   |   F   |   G   |+++++++++++++++++++++++|   H   |   J   |   K   |   L   |   ;   |   '   |
-// | LCTRL |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |   :   |   "   |
+// | LCTRL |   A   |   S   |   D   |   F   |   G   |+++++++++++++++++++++++|   H   |   J   |   K   |   L   |   ;   |   '   |
+// |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |   :   |   "   |
 // |-------|-------|-------|-------|-------|-------|+++++++++++++++++++++++|-------|-------|-------|-------|-------|-------|
 // | LSHFT |   Z   |   X   |   C   |   V   |   B   |+++++++++++++++++++++++|   N   |   M   |   ,   |   .   |   /   | RSHFT |
-// |       |       |       |       |       |       |+++++++++++++++++++++++|       | Scrll |   <   |   >   |   ?   |       |
+// |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |   <   |   >   |   ?   |       |
 // |-------|-------|-------|-------|-------|-------|--------+++++++--------|-------|-------|-------|-------|-------|-------|
-// |       | EMOJI | LALT  | LGUI  | Fn    | SPACE | SPACE |+++++++| ENTER | BKSPC |       TrackBall       | MEH   | HYPER |
-// |       |       |       |       |       | Num   | Scrll |+++++++| RGUI  | RALT  |                       |       |       |
+// |       |       |  ESC  | LALT  | LGUI  | SPACE | BKSPC |+++++++| ENTER | RGUI  |       TrackBall       | MEH   | HYPER |
+// |       |       |       |       |       | Num   | Fn    |+++++++|       |       |                       |       |       |
 // |-------|-------|-------|-------|-------|-------| ------|+++++++|------ |-------|-------|-------|-------|-------|-------|
 
-&kp TAB        &kp Q    &kp W     &kp E     &kp R  &kp T                                   &kp Y  &kp U    &kp I      &kp O    &kp P              &kp BACKSLASH
-&mt LCTRL ESC  &kp A    &kp S     &kp D     &kp F  &kp G                                   &kp H  &kp J    &kp K      &kp L    &kp SEMI           &kp SQT
-&kp LSHFT      &kp Z    &kp X     &kp C     &kp V  &kp B                                   &kp N  &lt 5 M  &kp COMMA  &kp DOT  &lt 4 FSLH         &kp RSHFT
-&none          &memoji  &kp LALT  &kp LGUI  &mo 3  &lt 1 SPACE  &mo 5        &mt RGUI RET  &mt RALT BACKSPACE /* TrackBall */  &kp LC(LA(LSHFT))  &kp LC(LA(LS(LGUI)))
-           >;
+&kp TAB    &kp Q   &kp W    &kp E     &kp R     &kp T                                 &kp Y  &kp U    &kp I      &kp O    &kp P              &kp BACKSLASH
+&kp LCTRL  &kp A   &kp S    &kp D     &kp F     &kp G                                 &kp H  &kp J    &kp K      &kp L    &kp SEMI           &kp SQT
+&kp LSHFT  &kp Z   &kp X    &kp C     &kp V     &kp B                                 &kp N  &lt 5 M  &kp COMMA  &kp DOT  &lt 4 FSLH         &kp RSHFT
+&none      &none   &kp ESC  &kp LALT  &kp LGUI  &lt 1 SPACE  &lt 3 BKSPC         &kp RET  &kp RGUI     /*  TrackBall  */  &kp LC(LA(LSHFT))  &kp LC(LA(LS(LGUI)))
+            >;
         };
 
         number_layer {
 	    label = "Num";
             bindings = <
 // -------------------------------------------------------------------------------------------------------------------------
-// | TAB   |   1   |   2   |   3   |   4   |   5   |+++++++++++++++++++++++|   6   |   7   |   8   |   9   |   0   |       |
-// |       |   !   |   @   |   #   |   $   |   %   |+++++++++++++++++++++++|   ^   |   &   |   *   |   (   |   )   |       |
+// | TAB   |   1   |   2   |   3   |   4   |   5   |+++++++++++++++++++++++|   6   |   7   |   8   |   9   |   0   |   \   |
+// |       |   !   |   @   |   #   |   $   |   %   |+++++++++++++++++++++++|   ^   |   &   |   *   |   (   |   )   |   |   |
 // |-------|-------|-------|-------|-------|-------|+++++++++++++++++++++++|-------|-------|-------|-------|-------|-------|
-// | ESC   |       |       |       |       |       |+++++++++++++++++++++++|       |   -   |   =   |   [   |   ]   |       |
-// | LCTRL |       |       |       |       |       |+++++++++++++++++++++++|       |   _   |   +   |   {   |   }   |       |
+// | LCTRL |   `   |       |       |       |       |+++++++++++++++++++++++|   -   |   =   |   [   |   ]   |   ;   |   '   |
+// |       |   ~   |       |       |       |       |+++++++++++++++++++++++|   _   |   +   |   {   |   }   |   :   |   "   |
 // |-------|-------|-------|-------|-------|-------|+++++++++++++++++++++++|-------|-------|-------|-------|-------|-------|
-// | LSHFT |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |       | RSHFT |
-// |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |       |       |
+// | LSHFT |       |       |       |       |       |+++++++++++++++++++++++|       |       |   ,   |   .   |   /   | RSHFT |
+// |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |   <   |   >   |   ?   |       |
 // |-------|-------|-------|-------|-------|-------|--------+++++++--------|-------|-------|-------|-------|-------|-------|
-// |       | EMOJI |       | LALT  | LGUI  | SPACE | Scrll |+++++++| ENTER | BKSPC |       TrackBall       | MEH   | HYPER |
-// |       |       |       |       |       | Num   |       |+++++++| Fn    |       |                       |       |       |
+// |       |       |  ESC  | LALT  | LGUI  | SPACE | BKSPC |+++++++| ENTER | RGUI  |       TrackBall       | MEH   | HYPER |
+// |       |       |       |       |       | Num   | Fn    |+++++++|       |       |                       |       |       |
 // |-------|-------|-------|-------|-------|-------| ------|+++++++|------ |-------|-------|-------|-------|-------|-------|
 
-    &trans    &kp N1  &kp N2  &kp N3  &kp N4   &kp N5                       &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &none
-    &trans    &none   &none   &none   &none    &none                        &none   &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &none
-    &trans    &none   &none   &none   &none    &none                        &none   &none      &none      &none     &none     &trans
-    &none     &memoji &none   &none   &trans   &trans  &trans       &trans  &trans /*    TrackBall      */  &trans  &trans
+&trans    &kp N1      &kp N2  &kp N3  &kp N4  &kp N5                       &kp N6     &kp N7     &kp N8    &kp N9    &kp N0    &trans
+&trans    &kp GRAVE   &none   &none   &none   &none                        &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans    &trans
+&trans    &none       &none   &none   &none   &none                        &none      &none      &trans    &trans    &trans    &trans
+&none     &none       &trans  &trans  &trans  &trans  &trans       &trans  &trans /*    TrackBall      */  &trans  &trans
             >;
         };
 
@@ -144,23 +144,22 @@
 	    label = "Fn";
             bindings = <
 // -------------------------------------------------------------------------------------------------------------------------
-// |       | F1    | F2    | F3    | F4    | F5    |+++++++++++++++++++++++| F6    | F7    | F8    | F9    | F10   |       |
-// |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |       |       |
+// |       | F1    | F2    | F3    | F4    | F5    |+++++++++++++++++++++++| F6    | F7    | F8    | F9    | F10   |   \   |
+// |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |       |   |   |
 // |-------|-------|-------|-------|-------|-------|+++++++++++++++++++++++|-------|-------|-------|-------|-------|-------|
-// |       | F11   | F12   |       |       |       |+++++++++++++++++++++++| Left  | Down  | Up    | Right |       |       |
-// |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |       |       |
+// |       | F11   | F12   |       |       |       |+++++++++++++++++++++++| Left  | Down  | Up    | Right |   ;   |   '   |
+// |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |       |   "   |
 // |-------|-------|-------|-------|-------|-------|+++++++++++++++++++++++|-------|-------|-------|-------|-------|-------|
-// |       | BT1   | BT2   | BT3   | BT4   | BTCLR |+++++++++++++++++++++++|       |       |       |       |       | RSHFT |
-// |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |       |       |
+// |       | BT1   | BT2   | BT3   | BT4   | BT5   |+++++++++++++++++++++++| BTCLR |       |   ,   |   .   |   /   | RSHFT |
+// |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |   <   |   >   |   ?   |       |
 // |-------|-------|-------|-------|-------|-------|--------+++++++--------|-------|-------|-------|-------|-------|-------|
-// |       | EMOJI |       | LALT  | LGUI  | SPACE | Scrll |+++++++| ENTER | BKSPC |       TrackBall       | MEH   | HYPER |
-// |       |       |       |       |       | Num   |       |+++++++| Fn    |       |                       |       |       |
+// |       |       |  ESC  | LALT  | LGUI  | SPACE | BKSPC |+++++++| ENTER | RGUI  |       TrackBall       | MEH   | HYPER |
+// |       |       |       |       |       | Num   | Fn    |+++++++|       |       |                       |       |       |
 // |-------|-------|-------|-------|-------|-------| ------|+++++++|------ |-------|-------|-------|-------|-------|-------|
-
-    &trans  &kp F1   &kp F2    &kp F3   &kp F4   &kp F5                     &kp F6    &kp F7    &kp F8  &kp F9     &kp F10 &none
-    &trans  &kp F11  &kp F12   &none    &none    &none                      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none   &none
-    &trans  &bt1     &bt2      &bt3     &bt4     &bt5                       &none     &none     &none   &none      &none   &trans
-    &btclr  &memoji  &none     &trans   &trans   &trans  &trans     &trans  &trans /*         TrackBall         */ &trans  &trans
+    &trans  &kp F1   &kp F2    &kp F3   &kp F4   &kp F5                     &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &trans
+    &trans  &kp F11  &kp F12   &none    &none    &none                      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none    &trans
+    &trans  &bt1     &bt2      &bt3     &bt4     &bt5                       &btclr    &none     &none   &none      &none    &trans
+    &trans  &trans  &trans     &trans   &trans   &trans  &trans     &trans  &trans /*         TrackBall         */ &trans   &trans
             >;
         };
 
@@ -174,16 +173,16 @@
 // |       |       |       |       |       |       |+++++++++++++++++++++++| PGUP  | Left  | Mid   | Right |       |       |
 // |       |       |       |       |       |       |+++++++++++++++++++++++|       | Click | Click | Click |       |       |
 // |-------|-------|-------|-------|-------|-------|+++++++++++++++++++++++|-------|-------|-------|-------|-------|-------|
-// |       |       |       |       |       |       |+++++++++++++++++++++++| PGDWN |       |       |       |       |       |
+// |       |       |       |       |       |       |+++++++++++++++++++++++| PGDWN |       |       |       |       | RSHFT |
 // |       |       |       |       |       |       |+++++++++++++++++++++++|       |       |       |       |       |       |
 // |-------|-------|-------|-------|-------|-------|--------+++++++--------|-------|-------|-------|-------|-------|-------|
-// |       | EMOJI |       | LALT  | LGUI  | SPACE | Scrll |+++++++| ENTER | BKSPC |       TrackBall       | MEH   | HYPER |
-// |       |       |       |       |       | Num   |       |+++++++| Fn    |       |                       |       |       |
+// |       |       |  ESC  | LALT  | LGUI  | SPACE | BKSPC |+++++++| ENTER | RGUI  |       TrackBall       | MEH   | HYPER |
+// |       |       |       |       |       | Num   | Fn    |+++++++|       |       |                       |       |       |
 // |-------|-------|-------|-------|-------|-------| ------|+++++++|------ |-------|-------|-------|-------|-------|-------|
 
 &trans  &none   &none   &none   &none    &none                              &none          &none      &none      &none      &none     &none 
 &trans  &none   &none   &none   &none    &none                              &kp PAGE_UP    &mkp LCLK  &mkp MCLK  &mkp RCLK  &none     &none
-&trans  &none   &none   &none   &none    &none                              &kp PAGE_DOWN  &none      &none      &none      &none     &none
+&trans  &none   &none   &none   &none    &none                              &kp PAGE_DOWN  &none      &none      &none      &none     &trans
 &trans  &trans  &trans  &trans  &trans   &trans  &trans             &trans  &trans  /*            TrackBall            */   &trans    &trans
             >;
         };
